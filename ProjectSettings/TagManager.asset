@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Actor
+  - Objects
   - Blocking
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3224666499
+    locked: 0
+  - name: Objects
+    uniqueID: 490920607
     locked: 0
