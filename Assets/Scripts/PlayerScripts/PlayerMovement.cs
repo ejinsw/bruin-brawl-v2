@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private StaminaBar stamina;
     private Coroutine coroutine;
+    private SpriteRenderer sprite;
 
 
     private bool isShifting = false;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         stamina = StaminaBar.instance;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate()
@@ -37,11 +39,11 @@ public class PlayerMovement : MonoBehaviour
         // Sprite condition look left or right
         if (moveDelta.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            sprite.flipX = false;
         }
         else if (moveDelta.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            sprite.flipX = true;
         }
 
         // Check and move Y
