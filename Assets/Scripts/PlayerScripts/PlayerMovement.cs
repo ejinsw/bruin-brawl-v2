@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private StaminaBar stamina;
     private Coroutine coroutine;
     private SpriteRenderer sprite;
-
-
     private bool isShifting = false;
 
 

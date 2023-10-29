@@ -14,6 +14,8 @@ public class GrabObject : MonoBehaviour
     private Vector3 rayDirection;
     private GameObject grabbedObject;
     private int layerIndex;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +77,7 @@ public class GrabObject : MonoBehaviour
         while (grabbedObject != null)
         {
             grabbedObject.transform.position = grabPoint.position;
+
             yield return null;
         }
     }
