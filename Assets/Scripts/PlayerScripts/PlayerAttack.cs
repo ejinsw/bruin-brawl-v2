@@ -7,9 +7,11 @@ using UnityEngine.InputSystem;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private GameObject roarPrefab;
+    [SerializeField] private Transform attackPosition;
     private bool attackCalled = false;
     private float lastAttackTime;
     private bool cooldown = false;
+
 
     private void Update()
     {
@@ -29,7 +31,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void SendRoar()
     {
-        GameObject roar = Instantiate(roarPrefab, transform.position, transform.rotation);
+        GameObject roar = Instantiate(roarPrefab, attackPosition.position, attackPosition.rotation);
         Animator anim = roar.GetComponent<Animator>();
         anim.Play("RoarAnim");
 
