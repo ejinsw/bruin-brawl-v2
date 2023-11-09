@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   dialogue:
-  - UCLA has bears.
+  - 'UCLA has bears...
+
+    They are called, Bruins!!!'
   - Do you like bears?
   responses:
   - responseText: Yes

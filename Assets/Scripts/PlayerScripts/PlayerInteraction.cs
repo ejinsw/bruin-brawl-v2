@@ -11,6 +11,10 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private Transform rayPoint;
     [SerializeField] private float rayDistance;
 
+    [SerializeField] private DialogueUI dialogueUI;
+    public DialogueUI DialogueUI => dialogueUI;
+    public IInteractable Interactable { get; set; }
+
 
     private Vector3 rayDirection;
     private GameObject grabbedObject;
@@ -73,12 +77,12 @@ public class PlayerInteraction : MonoBehaviour
         }
 
 
-        // NPC Interaction
+        // Dialogue Interaction
         if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == interactableLayer)
         {
-            if (inputValue.isPressed)
+            if (inputValue.isPressed && !dialogueUI.IsOpen)
             {
-
+                Interactable?.Interact(this);
             }
         }
     }
