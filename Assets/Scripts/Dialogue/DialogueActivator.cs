@@ -3,8 +3,19 @@ using UnityEngine;
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
+
+    public void UpdateDialogueObject(DialogueObject dialogueObject)
+    {
+        this.dialogueObject = dialogueObject;
+    }
+
     public void Interact(PlayerInteraction player)
     {
+        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject == dialogueObject)
+        {
+            player.DialogueUI.AddResponseEvents(responseEvents.Events);
+        }
+
         player.DialogueUI.ShowDialogue(dialogueObject);
     }
 

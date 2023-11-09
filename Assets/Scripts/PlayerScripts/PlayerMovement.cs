@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Check and move Y
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Blocking", "Interactable"));
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Blocking"));
         if (hit.collider == null && !isShifting)
         {
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Check and move X
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Blocking", "Interactable"));
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Blocking"));
         if (hit.collider == null && !isShifting)
         {
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
