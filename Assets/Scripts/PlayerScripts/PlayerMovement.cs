@@ -16,16 +16,17 @@ public class PlayerMovement : MonoBehaviour
     private StaminaBar stamina;
     private Coroutine coroutine;
     private SpriteRenderer sprite;
+    private Rigidbody2D rb;
 
     private bool isShifting = false;
-
-
+    
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         stamina = StaminaBar.instance;
         sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
@@ -34,12 +35,25 @@ public class PlayerMovement : MonoBehaviour
 
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
+        
+        float speedX = moveDelta.x * 75f;
+        float speedY = moveDelta.y * 75f;
 
-        float rollingSpeedX = moveDelta.x * 2;
-        float rollingSpeedY = moveDelta.y * 2;
+        float rollingSpeedX = moveDelta.x * 150f;
+        float rollingSpeedY = moveDelta.y * 150f;
 
         // Reset MoveDelta
         moveDelta = new Vector3(x, y, 1);
+        if (!isShifting)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, speedY * Time.deltaTime);
+            rb.velocity = new Vector2(speedX * Time.deltaTime, rb.velocity.y);
+        }
+        else if (isShifting)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rollingSpeedY * Time.deltaTime);
+            rb.velocity = new Vector2(rollingSpeedX * Time.deltaTime, rb.velocity.y);
+        }
 
         // Sprite condition look left or right
         if (moveDelta.x > 0)
@@ -51,27 +65,32 @@ public class PlayerMovement : MonoBehaviour
             sprite.flipX = true;
         }
 
-        // Check and move Y
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Blocking"));
-        if (hit.collider == null && !isShifting)
-        {
-            transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
-        }
-        else if (hit.collider == null && isShifting)
-        {
-            transform.Translate(0, rollingSpeedY * Time.deltaTime, 0);
-        }
-
-        // Check and move X
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Blocking"));
-        if (hit.collider == null && !isShifting)
-        {
-            transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
-        }
-        else if (hit.collider == null && isShifting)
-        {
-            transform.Translate(rollingSpeedX * Time.deltaTime, 0, 0);
-        }
+        // // Check collision and move Y
+        // hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Blocking"));
+        // if (!hit.collider && !isShifting)
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, moveDelta.y * Time.deltaTime * speed);
+        // }
+        // else if (!hit.collider && isShifting)
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, rollingSpeedY * Time.deltaTime * speed); 
+        // }
+        // Push back if stuck in wall
+        // if (hit.collider)
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + moveDelta.y * -1);
+        // }
+        //
+        // // Check collision and move X
+        // hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Blocking"));
+        // if (hit.collider == null && !isShifting)
+        // {
+        //     rb.velocity = new Vector2(moveDelta.x * Time.deltaTime * speed, rb.velocity.y);
+        // }
+        // else if (hit.collider == null && isShifting)
+        // {
+        //     rb.velocity = new Vector2(rollingSpeedX * Time.deltaTime * speed, rb.velocity.y);
+        // }
 
 
         // Check if shifting & drain stamina

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07d229a499c5d44568740a5d501e622b
+guid: 9cd82ca012f8b4aca9921d653b6ef1a9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RoarAttack_0
+      name: BruinBearTileMap copy_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 194
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,41 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0556e81f210d2412bb237323a772dd18
-      internalID: 788469975
+      spriteID: ac12b3a99e70d49c7bdcc4b9920c386d
+      internalID: 1486629521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94e5db372e0394c8784fa6c304ab0a4e
-      internalID: -1645075524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoarAttack_2
+      name: BruinBearTileMap copy_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 16
-        width: 16
-        height: 16
+        y: 194
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,41 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 166019884e149499e8885d48d4c2a28f
-      internalID: 1471427186
+      spriteID: 45ec2a0afb05946a7b9c3678f61d465a
+      internalID: -1230694521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d72d2cd02bd649a49b38fc23c1675d3
-      internalID: 68190045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoarAttack_4
+      name: BruinBearTileMap copy_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 16
-        width: 16
-        height: 16
+        y: 194
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6127eee76ed04854a5c4c2ad8cfca96
-      internalID: -1240435384
+      spriteID: 9d92bba6b6143412caad124c005b102e
+      internalID: 814909042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_5
+      name: BruinBearTileMap copy_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
+        x: 96
+        y: 194
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +200,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce640529bfd0a49ab83de5e40250a71d
-      internalID: -984506832
+      spriteID: 4bfb1316da85b46a895cfe673bd96313
+      internalID: -264981702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_6
+      name: BruinBearTileMap copy_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51ff9681ac034bfc9e0cbbffc6b9a7f
+      internalID: 95089076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cad0a0f38784ad090775c6d9c38dc9
+      internalID: -1546738650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450bc00168b994095beff108af1538ab
+      internalID: 2016530137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fe2d20d7bce49b58c77f5c78b25157
+      internalID: 585952387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453d7ddf7691d4b92a3a0b099c56ce10
+      internalID: -1125109272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 130
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,41 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8a17516b821a492c84ab9d50df80631
-      internalID: 1408824309
+      spriteID: 20906ab48a5cc471ab201b94ab284d17
+      internalID: -29626038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5ecb97095c9649ad9508e1080200407
-      internalID: -927482078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoarAttack_8
+      name: BruinBearTileMap copy_10
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
-        width: 16
-        height: 16
+        y: 130
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,41 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 670073617e5c94296a735f0db6bf68e6
-      internalID: -1772183316
+      spriteID: 52305f6e737c04363b4cff0c94efc944
+      internalID: 689085888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e1afa5f378dd4a6e9eae66fed13c929
-      internalID: 391267942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoarAttack_10
+      name: BruinBearTileMap copy_11
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 16
-        height: 16
+        y: 130
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49494653f28ee4f0db95b62c33b03c59
-      internalID: -913674663
+      spriteID: 7d2b79502ad584fac9106355a307b32d
+      internalID: -97982545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RoarAttack_11
+      name: BruinBearTileMap copy_12
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 96
+        y: 130
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,8 +389,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b17bd42dbe72a4366ad8f4ec6ab4845a
-      internalID: 2064764604
+      spriteID: e56cfcfee8da046108b44aef1d8a33cb
+      internalID: -1618681639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bbdffeac5b74185bd364ad5afe6a43
+      internalID: -925421984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BruinBearTileMap copy_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed7fc313205b45a883d88f220bf7e34
+      internalID: 439480682
       vertices: []
       indices: 
       edges: []
@@ -385,18 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RoarAttack_0: 788469975
-      RoarAttack_1: -1645075524
-      RoarAttack_10: -913674663
-      RoarAttack_11: 2064764604
-      RoarAttack_2: 1471427186
-      RoarAttack_3: 68190045
-      RoarAttack_4: -1240435384
-      RoarAttack_5: -984506832
-      RoarAttack_6: 1408824309
-      RoarAttack_7: -927482078
-      RoarAttack_8: -1772183316
-      RoarAttack_9: 391267942
+      BruinBearTileMap copy_0: 1486629521
+      BruinBearTileMap copy_1: -1230694521
+      BruinBearTileMap copy_10: 689085888
+      BruinBearTileMap copy_11: -97982545
+      BruinBearTileMap copy_12: -1618681639
+      BruinBearTileMap copy_13: -925421984
+      BruinBearTileMap copy_14: 439480682
+      BruinBearTileMap copy_2: 814909042
+      BruinBearTileMap copy_3: -264981702
+      BruinBearTileMap copy_4: 95089076
+      BruinBearTileMap copy_5: -1546738650
+      BruinBearTileMap copy_6: 2016530137
+      BruinBearTileMap copy_7: 585952387
+      BruinBearTileMap copy_8: -1125109272
+      BruinBearTileMap copy_9: -29626038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
