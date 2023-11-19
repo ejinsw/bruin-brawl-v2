@@ -31,7 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (DialogueUI.IsOpen) return;
+        if (DialogueUI.IsOpen)
+        {
+            rb.velocity = new Vector3(0,0,0);
+            return;
+        }
 
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
@@ -41,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         float rollingSpeedX = moveDelta.x * 150f;
         float rollingSpeedY = moveDelta.y * 150f;
-
+        
         // Reset MoveDelta
         moveDelta = new Vector3(x, y, 1);
         if (!isShifting)
